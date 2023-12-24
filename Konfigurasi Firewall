@@ -1,0 +1,8 @@
+Konfigurasi Firewall : 
+$ sudo firewall-cmd --permanent --add-service=http
+$ sudo firewall-cmd --permanent --add-service=https
+$ sudo firewall-cmd --permanent --add-service=ssh
+$ sudo firewall-cmd --permanent --add-port=9090/tcp   # Prometheus
+$ sudo firewall-cmd --permanent --add-port=3000/tcp   # Grafana
+$ sudo firewall-cmd --permanent --add-port=9100/tcp   # Node Exporter (for Nginx monitoring)
+$ sudo firewall-cmd --reload
