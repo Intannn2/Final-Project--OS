@@ -1,0 +1,7 @@
+$ sudo apt update
+$ sudo yum install openssh-server
+$ sudo nano /etc/ssh/sshd_config
+$ sudo systemctl restart sshd
+$ sudo systemctl status ssh
+$ sudo systemctl start ssh
+$ sudo systemctl enable ssh
